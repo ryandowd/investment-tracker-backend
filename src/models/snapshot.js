@@ -64,9 +64,9 @@ var snapshotSchema = new Schema({
         type: Number,
         required: true
     },
-    isa: [isaSchema],
-    cash: [cashSchema],
-    crypto: [cryptoSchema]
+    isa: isaSchema,
+    cash: cashSchema,
+    crypto: cryptoSchema
 });
 
 export const Snapshot = mongoose.model("Snapshot", snapshotSchema);
